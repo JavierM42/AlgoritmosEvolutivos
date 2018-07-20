@@ -1,0 +1,27 @@
+while (puntos_para_ganar > 0)
+	cobrar_recursos()
+	if (puedo_comprar(poblado, reserva))
+		comprar_poblado(reserva)
+		buscar_posicion_poblado(posicion, distancia)	// La posición válida que esté a la menor distancia posible
+		agregar(poblado, posicion, estado)
+		cant_poblados++
+		for (i in distancia)
+			while (!puedo_comprar(camino, reserva))
+				cobrar_recursos()
+			comprar_camino(reserva)
+			agregar(camino, estado)
+		solucion(dimension - puntos_para_ganar) = posicion
+		puntos_para_ganar--
+	if (puedo_comprar(ciudad, reserva) && cant_ciudades < cant_poblados && cant_ciudades <= 4)
+		seleccionar_lugar_ciudad(posicion)				// El primer poblado que encuentre
+		cant_ciudades++
+		comprar_ciudad(reserva)
+		agregar(ciudad, posicion, estado)
+		solucion(dimension - puntos_para_ganar) = posicion
+		puntos_para_ganar--
+	if (puedo_comprar(carta_desarrollo, reserva) && cant_cartas_desarrollo <= 4)
+		comprar_carta_desarrollo(reserva)
+		cant_cartas_desarrollo++
+		solucion(dimension - puntos_para_ganar) = -1
+		puntos_para_ganar--
+fitness = correr_simulaciones(solucion)

@@ -1,0 +1,9 @@
+terrenos: T M D M O M O P P O T A T A M P O A T
+numeros: 9 9 -1 10 5 5 11 4 8 4 6 3 3 12 6 3 2 11 10
+puertos: O 3 3 A M 3 T P 3
+construccionesOponentes: 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 1 1 1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1
+aristasOcupadas: 4,8 8,13 24,30 25,31 30,35 31,36 31,37 41,46 45,49 46,50 49,53 50,53
+construcciones: 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+caminos: 7,12 18,23 23,29 28,34 29,34 34,39
+reserva: T:0 A:0 M:0 P:0 O:0 puntos:0
+*
